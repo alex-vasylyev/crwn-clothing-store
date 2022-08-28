@@ -1,10 +1,9 @@
-import { useState} from 'react';
+import { useState } from 'react';
+
 import FormInput from '../form-input/form-input.component';
 import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
-
 import {
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
   signInWithGooglePopup,
 } from '../../utils/firebase/firebase.utils';
@@ -25,7 +24,7 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-   await signInWithGooglePopup();
+    await signInWithGooglePopup();
   };
 
   const handleSubmit = async (event) => {
